@@ -1,10 +1,13 @@
-%% ESTE PROGRAMA TRANSFORMA UNA FUNCION DE TRANSFERENCIA EN S A 
-% UNA FUNCION DE TRANSFERENCIA EN Z CON UN TIEMPO DE MUESTRE T
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% César Hernández Hernández
+%
+% This script transform a transfer function to discrete time space state
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-clear all;
-clc;
-
+%%
+clear variables
+clc
+%%
 num=[1.3]
 den=[13.9 1]
 

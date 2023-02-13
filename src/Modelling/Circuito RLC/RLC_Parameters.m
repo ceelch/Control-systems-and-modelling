@@ -1,8 +1,15 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% César Hernández Hernández
+%
+% This script makes a simulation of a circuit RLC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
 clear variables
 clc
 close all
 %%
-%Incluir los parametros del circuito RLC
+% RLC circuit parameters
 v=5; %v
 R=2; %Ohms
 C= 1; %F

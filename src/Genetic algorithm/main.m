@@ -1,11 +1,15 @@
-%% programa principal, minimizar función con algoritmos geneticos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% César Hernández Hernández
+%
+% This script minimises a function using genetic algorithms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-clc
+%% 
 clear variables
+clc
 close all
 %%
-%rng default % For reproducibility
-
+%rng default For reproducibility
 FitFcn=@myFitness;
 nvar=2;
 %%

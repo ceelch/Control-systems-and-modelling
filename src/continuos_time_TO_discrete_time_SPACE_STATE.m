@@ -1,23 +1,23 @@
-%% ESTE PROGRAMA CONVIERTE DE continuos time space state 
-%A discrete time space state
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% César Hernández Hernández
+%
+% This script transform a continuous time space state to discrete time
+% space state
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% 
+clear variables
 clc
-clear 
-
-%% MATRICES DEL TIEMPO CONTINUO
-
+%% Continuous time matrices 
 Ac = [0 1 0; 3 0 1; 0 1 0 ];
 Bc= [1; 1; 3];
 Cc=[0 1 0];
 Dc=zeros(1,1);
-
-%% TIEMPO DE MUESTREO
+%% Sample time
 Delta_t=1;
-
-%% CONVIERTE A DISCRETO
+%% Transform to discrete
 [Ad,Bd,Cd,Dd]=c2dm(Ac,Bc,Cc,Dc,Delta_t);
-
-%% CALCULA MATRICES EN DISCRETO
+%% Getting the discrete time matrices
 [m1,n1]=size(Cd);
 [n1,n_in]=size(Bd);
 
